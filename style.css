@@ -1,0 +1,50 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item{
+    position: relative;
+    margin:20px 7px;
+    cursor: pointer;
+    
+}
+.item-caption{
+    background-color:rgba(204,204,191,.8) ;
+    color:rgba(62,67,72,1);
+    position: absolute;
+    width: 80%;
+    bottom: 5%;
+    left: 10%;
+    padding: 5px;
+    text-align: center;
+  
+}
+.lightbox-container{
+    position: fixed;
+    background-color:rgba(204,204,191,.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scale(0,0);
+}
+.lightboxItem{
+    width: 50%;
+    min-width: 300px;
+    height: 400px;
+    background: url('./img/apple-computer-desk-electronics-374857.jpg') center center/cover;
+    box-sizing: 100% 100%;
+     cursor: pointer;
+     transform: scale(0,0);
+    transition: transform .5s;
+}
+#close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba(204,204,191,1);
+    
+}
+#right , #left{
+    color: rgba(204,204,191,1);
+    font-size: 25px;
+}
